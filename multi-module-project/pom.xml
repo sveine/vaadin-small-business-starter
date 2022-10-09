@@ -3,15 +3,21 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.vaadin.multimodule.example</groupId>
-    <artifactId>vaadin-multi-module-example</artifactId>
+    <artifactId>multi-module-project</artifactId>
     <name>Vaadin Multi-Module Example</name>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+    <parent>
+        <groupId>org.vaadin.multimodule.example</groupId>
+        <artifactId>super-pom</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../super-pom</relativePath>
+    </parent>
 
     <modules>
-        <module>backend</module>
-        <module>vaadin-app</module>
+        <module>../super-pom</module>
+        <module>../core-module</module>
+        <module>../vaadin-app</module>
     </modules>
 
 </project>
