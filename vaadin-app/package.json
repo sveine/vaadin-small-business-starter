@@ -18,6 +18,7 @@
     "@polymer/iron-meta": "3.0.1",
     "@polymer/iron-resizable-behavior": "3.0.1",
     "@polymer/polymer": "3.5.1",
+    "@vaadin-component-factory/vcf-nav": "1.0.6",
     "@vaadin/accordion": "23.2.3",
     "@vaadin/app-layout": "23.2.3",
     "@vaadin/avatar": "23.2.3",
@@ -165,6 +166,7 @@
       "@polymer/iron-meta": "3.0.1",
       "@polymer/iron-resizable-behavior": "3.0.1",
       "@polymer/polymer": "3.5.1",
+      "@vaadin-component-factory/vcf-nav": "1.0.6",
       "@vaadin/accordion": "23.2.3",
       "@vaadin/app-layout": "23.2.3",
       "@vaadin/avatar": "23.2.3",
@@ -293,7 +295,7 @@
       "workbox-core": "6.5.0",
       "workbox-precaching": "6.5.0"
     },
-    "hash": "606271a71e09d080a6d2a1bc4378f0566f9d1b20ba34a64da97d8949c1aa0cd9"
+    "hash": "19a2b91bb00f8adb39d55018505069b3ee1ddb286be1ef45ddfbf084a6e59c55"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
@@ -415,7 +417,6 @@
     "@hilla/generator-typescript-utils": "$@hilla/generator-typescript-utils",
     "@hilla/frontend": "$@hilla/frontend",
     "@hilla/generator-typescript-plugin-client": "$@hilla/generator-typescript-plugin-client",
-    "line-awesome": "$line-awesome",
     "@hilla/generator-typescript-plugin-model": "$@hilla/generator-typescript-plugin-model",
     "@hilla/generator-typescript-core": "$@hilla/generator-typescript-core",
     "@hilla/generator-typescript-plugin-barrel": "$@hilla/generator-typescript-plugin-barrel",
@@ -423,6 +424,8 @@
     "@hilla/generator-typescript-plugin-push": "$@hilla/generator-typescript-plugin-push",
     "@hilla/form": "$@hilla/form",
     "@hilla/generator-typescript-plugin-backbone": "$@hilla/generator-typescript-plugin-backbone",
-    "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli"
+    "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli",
+    "line-awesome": "$line-awesome",
+    "@vaadin-component-factory/vcf-nav": "$@vaadin-component-factory/vcf-nav"
   }
 }
