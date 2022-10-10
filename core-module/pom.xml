@@ -26,6 +26,10 @@
 
 		<!-- Vaadin -->
 		<dependency>
+			<groupId>dev.hilla</groupId>
+			<artifactId>hilla</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>com.vaadin</groupId>
 			<artifactId>vaadin-spring-boot-starter</artifactId>
 		</dependency>

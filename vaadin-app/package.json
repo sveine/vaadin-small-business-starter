@@ -422,11 +422,7 @@
     "proj4": "$proj4",
     "@hilla/generator-typescript-utils": "$@hilla/generator-typescript-utils",
     "@hilla/frontend": "$@hilla/frontend",
-    "mobx": "$mobx",
     "@hilla/generator-typescript-plugin-client": "$@hilla/generator-typescript-plugin-client",
-    "@adobe/lit-mobx": "$@adobe/lit-mobx",
-    "line-awesome": "$line-awesome",
-    "@vaadin-component-factory/vcf-nav": "$@vaadin-component-factory/vcf-nav",
     "@hilla/generator-typescript-plugin-model": "$@hilla/generator-typescript-plugin-model",
     "@hilla/generator-typescript-core": "$@hilla/generator-typescript-core",
     "@hilla/generator-typescript-plugin-barrel": "$@hilla/generator-typescript-plugin-barrel",
@@ -434,6 +430,10 @@
     "@hilla/generator-typescript-plugin-push": "$@hilla/generator-typescript-plugin-push",
     "@hilla/form": "$@hilla/form",
     "@hilla/generator-typescript-plugin-backbone": "$@hilla/generator-typescript-plugin-backbone",
-    "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli"
+    "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli",
+    "mobx": "$mobx",
+    "@adobe/lit-mobx": "$@adobe/lit-mobx",
+    "line-awesome": "$line-awesome",
+    "@vaadin-component-factory/vcf-nav": "$@vaadin-component-factory/vcf-nav"
   }
 }
