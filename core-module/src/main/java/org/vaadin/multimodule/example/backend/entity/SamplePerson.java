@@ -1,16 +1,24 @@
 package org.vaadin.multimodule.example.backend.entity;
 
-import java.time.LocalDate;
+import javax.annotation.Nonnull;
 import javax.persistence.Entity;
+import javax.validation.constraints.Email;
+import java.time.LocalDate;
 
 @Entity
 public class SamplePerson extends AbstractEntity {
 
+    @Nonnull
     private String firstName;
+    @Nonnull
     private String lastName;
+    @Email
+    @Nonnull
     private String email;
+    @Nonnull
     private String phone;
     private LocalDate dateOfBirth;
+    @Nonnull
     private String occupation;
     private boolean important;
 
