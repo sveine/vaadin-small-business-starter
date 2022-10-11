@@ -91,7 +91,7 @@ public class MainLayout extends AppLayout {
     }
 
     private Component createDrawerContent() {
-        H2 appName = new H2("Vaadin Multi-Module Example");
+        H2 appName = new H2("Vaadin Small Business Starter");
         appName.addClassNames("app-name");
 
         com.vaadin.flow.component.html.Section section = new com.vaadin.flow.component.html.Section(appName,

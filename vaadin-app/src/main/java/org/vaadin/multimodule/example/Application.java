@@ -17,7 +17,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  */
 @SpringBootApplication
 @Theme(value = "my-theme")
-@PWA(name = "Vaadin Multi-Module Example", shortName = "Vaadin Multi-Module Example")
+@PWA(name = "Vaadin Small Business Starter", shortName = "Vaadin Small Business Starter")
 
 // Lit autocomplete
 @NpmPackage(value = "@web-types/lit", version = "latest")
