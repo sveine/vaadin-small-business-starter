@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "postinstall": "cd ../core-module &  npm install"
+    "postinstall": "node -e \"var exec = require('child_process').exec;exec('npm install',{cwd:'../core-module'})\""
   },
   "dependencies": {
     "@adobe/lit-mobx": "2.0.0",
