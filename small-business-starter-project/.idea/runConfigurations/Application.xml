@@ -2,14 +2,14 @@
   <configuration default="false" name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
     <option name="ACTIVE_PROFILES" />
     <envs>
-      <env name="PORT" value="8083" />
+      <env name="PORT" value="8084" />
     </envs>
     <module name="small-business-starter-vaadin" />
     <option name="SPRING_BOOT_MAIN_CLASS" value="org.vaadin.smallbusiness.application.Application" />
     <option name="VM_PARAMETERS" value="-Dvaadin.launch-browser=false -XX:HotswapAgent=fatjar -Duser.timezone=UTC" />
     <option name="WORKING_DIRECTORY" value="file://../small-business-starter-vaadin" />
     <method v="2">
-      <option name="LaunchBrowser.Before.Run" browser="dc98add5-9f93-415a-8238-b81dd1ce9029" url="http://localhost:8083/" />
+      <option name="LaunchBrowser.Before.Run" browser="dc98add5-9f93-415a-8238-b81dd1ce9029" url="http://localhost:8084/" />
       <option name="Make" enabled="true" />
     </method>
   </configuration>

@@ -1,6 +1,6 @@
 # Stage that builds the application, a prerequisite for the running stage
 FROM maven:3-openjdk-17-slim as build
-RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
 RUN apt-get update -qq && apt-get install -qq --no-install-recommends nodejs
 
 # Stop running as root at this point
@@ -16,6 +16,10 @@ COPY --chown=myuser:myuser super-pom/pom.xml super-pom/
 COPY --chown=myuser:myuser core-module/pom.xml core-module/
 COPY --chown=myuser:myuser core-module/src core-module/src
 COPY --chown=myuser:myuser core-module/frontend-lib core-module/frontend-lib
+COPY --chown=myuser:myuser \
+    core-module/package.json \
+    core-module/tsconfig.json \
+    core-module/package-lock.json* core-module/
 
 # Main Project: small-business-starter-project
 COPY --chown=myuser:myuser small-business-starter-project/pom.xml small-business-starter-project/
@@ -30,7 +34,7 @@ COPY --chown=myuser:myuser \
     small-business-starter-vaadin/types.d.ts \
     small-business-starter-vaadin/package-lock.json* \
     small-business-starter-vaadin/pnpm-lock.yaml* \
-    small-business-starter-vaadin/webpack.config.js* small-business-starter-vaadin/
+    small-business-starter-vaadin/vite.config.ts* small-business-starter-vaadin/
 
 RUN mvn -f small-business-starter-project/pom.xml dependency:go-offline -Pproduction
 
