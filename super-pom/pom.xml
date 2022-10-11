@@ -16,8 +16,8 @@
 
     <properties>
         <java.version>17</java.version>
-        <vaadin.version>23.2.3</vaadin.version>
-        <hilla.version>1.2.3</hilla.version>
+        <vaadin.version>23.2.4</vaadin.version>
+        <hilla.version>1.2.4</hilla.version>
         <skipTests>true</skipTests>
     </properties>
 
