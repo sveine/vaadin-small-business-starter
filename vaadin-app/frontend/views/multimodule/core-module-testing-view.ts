@@ -4,7 +4,7 @@ import '@vaadin/vaadin-text-field';
 import {html} from 'lit';
 import {customElement, state} from 'lit/decorators.js';
 import {View} from "Frontend/views/view";
-import EnpointJavaRecord from "Frontend/generated/org/vaadin/multimodule/example/endpoint/EndpointData/EnpointJavaRecord";
+import EnpointJavaRecord from "Frontend/generated/org/vaadin/smallbusiness/application/endpoint/EndpointData/EnpointJavaRecord";
 import {DemoEndpoint} from "Frontend/generated/endpoints";
 import {HelloUtil} from "FrontendLib/src/util/hello-util";
 import "FrontendLib/css/my-core-frontend-colors.scss";

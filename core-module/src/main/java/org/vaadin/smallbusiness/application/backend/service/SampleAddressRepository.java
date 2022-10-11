@@ -1,0 +1,10 @@
+package org.vaadin.smallbusiness.application.backend.service;
+
+import java.util.UUID;
+
+import org.vaadin.smallbusiness.application.backend.entity.SampleAddress;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface SampleAddressRepository extends JpaRepository<SampleAddress, UUID> {
+
+}
