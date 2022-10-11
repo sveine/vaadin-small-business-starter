@@ -20,7 +20,7 @@ import com.vaadin.flow.router.RouterLink;
 import org.vaadin.multimodule.example.app.views.about.AboutView;
 import org.vaadin.multimodule.example.app.views.addressform.AddressFormView;
 import org.vaadin.multimodule.example.app.views.masterdetail.MasterDetailView;
-import org.vaadin.multimodule.example.app.views.multimodulefrontend.HelloLitView;
+import org.vaadin.multimodule.example.app.views.multimodule.CoreModuleTestingView;
 import org.vaadin.multimodule.example.app.views.personform.PersonFormView;
 
 /**
@@ -124,7 +124,7 @@ public class MainLayout extends AppLayout {
                 new MenuItemInfo("Master-Detail", "la la-columns", MasterDetailView.class),
                 new MenuItemInfo("Person Form", "la la-user", PersonFormView.class),
                 new MenuItemInfo("Address Form", "la la-map-marker", AddressFormView.class),
-                new MenuItemInfo("Hello Lit", "la la-handshake", HelloLitView.class),
+                new MenuItemInfo("Multimodule", "la la-handshake", CoreModuleTestingView.class),
         };
     }
 

@@ -22,6 +22,9 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 // Lit autocomplete
 @NpmPackage(value = "@web-types/lit", version = "latest")
 
+// SCSS in Vite
+@NpmPackage(value = "sass", version = "1.55.0")
+
 // Frontend State
 @NpmPackage(value = "@adobe/lit-mobx", version = "2.0.0")
 @NpmPackage(value = "mobx", version = "^6.3.5")

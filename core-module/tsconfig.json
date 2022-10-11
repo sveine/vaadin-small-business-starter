@@ -19,20 +19,16 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "experimentalDecorators": true,
-    "baseUrl": "frontend",
+    "baseUrl": "frontend-lib",
     "paths": {
       "FrontendLib/*": [
-        "../../core-module/frontend-lib/*"
-      ],
-      "Frontend/*": [
         "*"
-      ]
+      ],
     }
   },
   "include": [
-    "frontend/**/*.ts",
-    "frontend/index.js",
-    "types.d.ts"
+    "frontend-lib/**/*.ts",
+    "frontend-lib/index.js",
   ],
   "exclude": []
 }

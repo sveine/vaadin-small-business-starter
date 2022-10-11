@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "postinstall": "cd ../core-module &  npm install"
+  }
+}

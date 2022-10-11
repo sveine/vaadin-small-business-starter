@@ -1,6 +1,7 @@
 {
-  "name": "no-name",
-  "license": "UNLICENSED",
+  "scripts": {
+    "postinstall": "cd ../core-module &  npm install"
+  },
   "dependencies": {
     "@adobe/lit-mobx": "2.0.0",
     "@hilla/form": "1.2.3",
@@ -134,7 +135,8 @@
     "line-awesome": "1.3.0",
     "lit": "2.3.0",
     "mobx": "^6.3.5",
-    "proj4": "2.8.0"
+    "proj4": "2.8.0",
+    "sass": "1.55.0"
   },
   "devDependencies": {
     "@rollup/plugin-replace": "3.1.0",
@@ -284,7 +286,8 @@
       "line-awesome": "1.3.0",
       "lit": "2.3.0",
       "mobx": "^6.3.5",
-      "proj4": "2.8.0"
+      "proj4": "2.8.0",
+      "sass": "1.55.0"
     },
     "devDependencies": {
       "@rollup/plugin-replace": "3.1.0",
@@ -301,7 +304,7 @@
       "workbox-core": "6.5.0",
       "workbox-precaching": "6.5.0"
     },
-    "hash": "13f5861856eaac1aaddb216dbc148ea7e3a81f6126250cdbd087a05d0a28e3ee"
+    "hash": "93789b89750f987b7fc1c31261f7deeca34175b336595a0ca5c3e4e8c0f3c445"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
@@ -419,10 +422,15 @@
     "construct-style-sheets-polyfill": "$construct-style-sheets-polyfill",
     "lit": "$lit",
     "@polymer/polymer": "$@polymer/polymer",
+    "sass": "$sass",
     "proj4": "$proj4",
     "@hilla/generator-typescript-utils": "$@hilla/generator-typescript-utils",
     "@hilla/frontend": "$@hilla/frontend",
+    "mobx": "$mobx",
     "@hilla/generator-typescript-plugin-client": "$@hilla/generator-typescript-plugin-client",
+    "@adobe/lit-mobx": "$@adobe/lit-mobx",
+    "line-awesome": "$line-awesome",
+    "@vaadin-component-factory/vcf-nav": "$@vaadin-component-factory/vcf-nav",
     "@hilla/generator-typescript-plugin-model": "$@hilla/generator-typescript-plugin-model",
     "@hilla/generator-typescript-core": "$@hilla/generator-typescript-core",
     "@hilla/generator-typescript-plugin-barrel": "$@hilla/generator-typescript-plugin-barrel",
@@ -430,10 +438,6 @@
     "@hilla/generator-typescript-plugin-push": "$@hilla/generator-typescript-plugin-push",
     "@hilla/form": "$@hilla/form",
     "@hilla/generator-typescript-plugin-backbone": "$@hilla/generator-typescript-plugin-backbone",
-    "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli",
-    "mobx": "$mobx",
-    "@adobe/lit-mobx": "$@adobe/lit-mobx",
-    "line-awesome": "$line-awesome",
-    "@vaadin-component-factory/vcf-nav": "$@vaadin-component-factory/vcf-nav"
+    "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli"
   }
 }

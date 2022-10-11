@@ -1,9 +1,20 @@
 import { UserConfigFn } from 'vite';
 import { overrideVaadinConfig } from './vite.generated';
-
+import * as path from "path";
+const frontendCorePath = path.resolve(__dirname, "../core-module");
 const customConfig: UserConfigFn = (env) => ({
-  // Here you can add custom Vite parameters
-  // https://vitejs.dev/config/
+    server: {
+        fs: {
+            allow: [
+                frontendCorePath
+            ]
+        }
+    },
+    resolve: {
+        alias: {
+            "FrontendLib": path.resolve(frontendCorePath, "frontend-lib"),
+        },
+    }
 });
 
 export default overrideVaadinConfig(customConfig);

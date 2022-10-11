@@ -3,3 +3,7 @@
 @import url('./views/person-form-view.css');
 @import url('./views/address-form-view.css');
 @import url('line-awesome/dist/line-awesome/css/line-awesome.min.css');
+
+/* Vite alias not resolved in IntelliJ */
+/*noinspection CssUnknownTarget*/
+@import "FrontendLib/theme/my-core-theme-colors.css";
