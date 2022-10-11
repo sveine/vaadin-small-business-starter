@@ -6,7 +6,7 @@
 	<packaging>jar</packaging>
 
 	<parent>
-		<groupId>org.vaadin.multimodule.example</groupId>
+		<groupId>com.smallbusiness.application</groupId>
 		<artifactId>super-pom</artifactId>
 		<version>1.0-SNAPSHOT</version>
 		<relativePath>../super-pom</relativePath>
