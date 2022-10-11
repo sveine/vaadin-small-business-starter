@@ -17,7 +17,7 @@
     <modules>
         <module>../super-pom</module>
         <module>../core-module</module>
-        <module>../vaadin-app</module>
+        <module>../small-business-vaadin</module>
     </modules>
 
 </project>
