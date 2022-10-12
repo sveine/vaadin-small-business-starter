@@ -7,7 +7,7 @@
     <packaging>jar</packaging>
 
     <parent>
-        <groupId>com.smallbusiness.application</groupId>
+        <groupId>com.smallbusiness</groupId>
         <artifactId>super-pom</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../super-pom</relativePath>
@@ -19,6 +19,7 @@
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>core-module</artifactId>
+            <version>${project.version}</version>
         </dependency>
 
         <!-- DB -->
