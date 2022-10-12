@@ -13,15 +13,13 @@ USER myuser
 COPY --chown=myuser:myuser super-pom/pom.xml super-pom/
 
 # Shared module: skisporet-core
-#COPY --chown=myuser:myuser core-module/pom.xml core-module/
-#COPY --chown=myuser:myuser core-module/src core-module/src
-#COPY --chown=myuser:myuser core-module/frontend-lib core-module/frontend-lib
-#COPY --chown=myuser:myuser \
-#    core-module/package.json \
-#    core-module/tsconfig.json \
-#    core-module/package-lock.json* core-module/
-
-COPY --chown=myuser:myuser core-module/ core-module/
+COPY --chown=myuser:myuser core-module/pom.xml core-module/
+COPY --chown=myuser:myuser core-module/src core-module/src
+COPY --chown=myuser:myuser core-module/frontend-lib core-module/frontend-lib
+COPY --chown=myuser:myuser \
+    core-module/package.json \
+    core-module/tsconfig.json \
+    core-module/package-lock.json* core-module/
 
 # Main Project: small-business-starter-project
 COPY --chown=myuser:myuser small-business-starter-project/pom.xml small-business-starter-project/
@@ -38,13 +36,10 @@ COPY --chown=myuser:myuser \
     small-business-starter-vaadin/pnpm-lock.yaml* \
     small-business-starter-vaadin/vite.config.ts* small-business-starter-vaadin/
 
-WORKDIR /usr/src/app/small-business-starter-vaadin
-RUN mvn -f ../small-business-starter-project/pom.xml dependency:go-offline -Pproduction
+RUN mvn -f small-business-starter-project/pom.xml dependency:go-offline -Pproduction
 
 # Build the production package, assuming that we validated the version before so no need for running tests again
-RUN mvn -f ../small-business-starter-project/pom.xml clean package -DskipTests -Pproduction
-
-WORKDIR /usr/src/app/
+RUN mvn -f small-business-starter-project/pom.xml clean package -DskipTests -Pproduction
 
 # Running stage: the part that is used for running the application
 FROM openjdk:17-jdk-slim

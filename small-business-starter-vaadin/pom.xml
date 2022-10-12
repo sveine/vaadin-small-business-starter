@@ -19,7 +19,6 @@
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>core-module</artifactId>
-            <version>${project.version}</version>
         </dependency>
 
         <!-- DB -->
