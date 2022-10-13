@@ -9,10 +9,10 @@ WORKDIR /usr/src/app/
 RUN chown myuser:myuser /usr/src/app/
 USER myuser
 
-# Top level POM: super-pom
+# Super POM
 COPY --chown=myuser:myuser super-pom/pom.xml super-pom/
 
-# Shared module: skisporet-core
+# Shared module
 COPY --chown=myuser:myuser core-module/pom.xml core-module/
 COPY --chown=myuser:myuser core-module/src core-module/src
 COPY --chown=myuser:myuser core-module/frontend-lib core-module/frontend-lib
@@ -21,10 +21,10 @@ COPY --chown=myuser:myuser \
     core-module/tsconfig.json \
     core-module/package-lock.json* core-module/
 
-# Main Project: small-business-starter-project
+# Main Project
 COPY --chown=myuser:myuser small-business-starter-project/pom.xml small-business-starter-project/
 
-# Main module: skisporet-enduser
+# Main module
 COPY --chown=myuser:myuser small-business-starter-vaadin/pom.xml small-business-starter-vaadin/
 COPY --chown=myuser:myuser small-business-starter-vaadin/src small-business-starter-vaadin/src
 COPY --chown=myuser:myuser small-business-starter-vaadin/frontend small-business-starter-vaadin/frontend
