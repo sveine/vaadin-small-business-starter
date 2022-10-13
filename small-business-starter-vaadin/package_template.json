@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "postinstall": "cd ../core-module &  npm install"
+    "postinstall": "node -e \"require('child_process').exec('npm i',{cwd : '../core-module'}).stdout.pipe(process.stdout);\""
   }
 }
