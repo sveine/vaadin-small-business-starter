@@ -34,6 +34,7 @@ COPY --chown=myuser:myuser \
     small-business-starter-vaadin/types.d.ts \
     small-business-starter-vaadin/package-lock.json* \
     small-business-starter-vaadin/pnpm-lock.yaml* \
+    small-business-starter-vaadin/webpack.config.js* \
     small-business-starter-vaadin/vite.config.ts* small-business-starter-vaadin/
 
 RUN mvn -f small-business-starter-project/pom.xml dependency:go-offline -Pproduction
