@@ -17,12 +17,6 @@ mvn spring-boot:run -pl ../small-business-vaadin
 
 ## Docker
 
-<div style="background-color: #ffe3e3;padding:15px">
-Currently not working for <code>vaadin-featureflags.properties > com.vaadin.experimental.hillaEngine=true</code>
-</div>
-
-[hillaEngine: Cannot build Docker image](https://github.com/vaadin/hilla/issues/595)
-
 ### Build
 ```terminal
 docker build -t small-business-starter:latest -f Dockerfile ..

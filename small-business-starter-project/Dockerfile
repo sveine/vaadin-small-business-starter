@@ -39,7 +39,7 @@ COPY --chown=myuser:myuser \
 RUN mvn -f small-business-starter-project/pom.xml dependency:go-offline -Pproduction
 
 # Build the production package, assuming that we validated the version before so no need for running tests again
-RUN mvn -f small-business-starter-project/pom.xml clean package -DskipTests -Pproduction
+RUN mvn -f small-business-starter-project/pom.xml clean install -DskipTests -Pproduction
 
 # Running stage: the part that is used for running the application
 FROM openjdk:17-jdk-slim
