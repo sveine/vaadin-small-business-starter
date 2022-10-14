@@ -4,10 +4,10 @@ import '@vaadin/vaadin-text-field';
 import {html} from 'lit';
 import {customElement, state} from 'lit/decorators.js';
 import {View} from "Frontend/views/view";
-import EnpointJavaRecord from "Frontend/generated/com/smallbusiness/application/endpoint/EndpointData/EnpointJavaRecord";
 import {DemoEndpoint} from "Frontend/generated/endpoints";
 import {HelloUtil} from "FrontendLib/src/util/hello-util";
 import "FrontendLib/css/my-core-frontend-colors.scss";
+import EnpointJavaRecord from "Frontend/generated/com/smallbusiness/core/sampledata/EndpointData/EnpointJavaRecord";
 
 @customElement('core-module-testing-view')
 export class CoreModuleTestingView extends View {
@@ -58,9 +58,6 @@ export class CoreModuleTestingView extends View {
 
                     <div>Image loaded frontend from core-module jar in META-INF/resources/images</div>
                     <img src="./images/hospital.png" alt="">
-
-                    <div>Image loaded frontend from frontend/images (Seems not possible to load from FrontendLib)</div>
-                    <img src="../../images/webcam.png" alt="">
                 </div>
 
             </vaadin-vertical-layout>`;
