@@ -119,12 +119,12 @@ public class MainLayout extends AppLayout {
 
     private MenuItemInfo[] createMenuItems() {
         return new MenuItemInfo[]{
+                new MenuItemInfo("Multimodule", "la la-handshake", CoreModuleTestingView.class),
                 new MenuItemInfo("Hello World", "la la-globe", HelloWorldView.class),
                 new MenuItemInfo("About", "la la-file", AboutView.class),
                 new MenuItemInfo("Master-Detail", "la la-columns", MasterDetailView.class),
                 new MenuItemInfo("Person Form", "la la-user", PersonFormView.class),
                 new MenuItemInfo("Address Form", "la la-map-marker", AddressFormView.class),
-                new MenuItemInfo("Multimodule", "la la-handshake", CoreModuleTestingView.class),
         };
     }
 

@@ -1,4 +1,4 @@
-package com.smallbusiness.core.backend.entity;
+package com.smallbusiness.core.entity;
 
 import org.hibernate.annotations.Type;
 
@@ -33,10 +33,9 @@ public abstract class AbstractEntity {
 
     @Override
     public boolean equals(Object obj) {
-        if (!(obj instanceof AbstractEntity)) {
+        if (!(obj instanceof AbstractEntity other)) {
             return false; // null or other class
         }
-        AbstractEntity other = (AbstractEntity) obj;
 
         if (id != null) {
             return id.equals(other.id);

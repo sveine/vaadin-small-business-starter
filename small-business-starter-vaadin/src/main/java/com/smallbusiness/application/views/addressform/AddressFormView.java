@@ -1,8 +1,8 @@
 package com.smallbusiness.application.views.addressform;
 
-import com.smallbusiness.core.backend.entity.SampleAddress;
-import com.smallbusiness.core.backend.service.SampleAddressService;
 import com.smallbusiness.application.views.MainLayout;
+import com.smallbusiness.core.entity.SampleAddress;
+import com.smallbusiness.core.service.SampleAddressService;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
@@ -21,16 +21,16 @@ import com.vaadin.flow.router.Route;
 @Route(value = "address-form", layout = MainLayout.class)
 public class AddressFormView extends Div {
 
-    private TextField street = new TextField("Street address");
-    private TextField postalCode = new TextField("Postal code");
-    private TextField city = new TextField("City");
-    private ComboBox<String> state = new ComboBox<>("State");
-    private ComboBox<String> country = new ComboBox<>("Country");
+    private final TextField street = new TextField("Street address");
+    private final TextField postalCode = new TextField("Postal code");
+    private final TextField city = new TextField("City");
+    private final ComboBox<String> state = new ComboBox<>("State");
+    private final ComboBox<String> country = new ComboBox<>("Country");
 
-    private Button cancel = new Button("Cancel");
-    private Button save = new Button("Save");
+    private final Button cancel = new Button("Cancel");
+    private final Button save = new Button("Save");
 
-    private Binder<SampleAddress> binder = new Binder<>(SampleAddress.class);
+    private final Binder<SampleAddress> binder = new Binder<>(SampleAddress.class);
 
     public AddressFormView(SampleAddressService addressService) {
         addClassName("address-form-view");

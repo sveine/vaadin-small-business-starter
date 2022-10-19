@@ -11,7 +11,6 @@ import com.smallbusiness.application.views.MainLayout;
 
 @PageTitle("Hello World")
 @Route(value = "hello", layout = MainLayout.class)
-@RouteAlias(value = "", layout = MainLayout.class)
 public class HelloWorldView extends HorizontalLayout {
 
     private TextField name;

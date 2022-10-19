@@ -1,12 +1,19 @@
 package com.smallbusiness.application;
 
+import com.smallbusiness.core.entity.BasePackageForEntity;
+import com.smallbusiness.core.repository.BasePackageForRepository;
+import com.smallbusiness.core.service.BasePackageForService;
 import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.component.page.AppShellConfigurator;
 import com.vaadin.flow.server.PWA;
 import com.vaadin.flow.theme.Theme;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
+import org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 /**
  * The entry point of the Spring Boot application.
@@ -15,7 +22,12 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  * and some desktop browsers.
  *
  */
-@SpringBootApplication
+@SpringBootApplication(exclude = ErrorMvcAutoConfiguration.class)
+@EntityScan(basePackageClasses = {BasePackageForEntity.class})
+@EnableJpaRepositories(basePackageClasses = {BasePackageForRepository.class})
+@ComponentScan(basePackageClasses = {Application.class, BasePackageForService.class})
+
+
 @Theme(value = "my-theme")
 @PWA(name = "Vaadin Small Business Starter", shortName = "Vaadin Small Business Starter")
 

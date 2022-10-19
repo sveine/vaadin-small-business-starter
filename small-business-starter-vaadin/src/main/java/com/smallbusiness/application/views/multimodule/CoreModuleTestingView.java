@@ -10,8 +10,10 @@ import com.vaadin.flow.component.template.Id;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.smallbusiness.application.views.MainLayout;
+import com.vaadin.flow.router.RouteAlias;
 
 @PageTitle("Core module testing")
+@RouteAlias(value = "", layout = MainLayout.class)
 @Route(layout = MainLayout.class)
 @Tag("core-module-testing-view")
 @JsModule("./views/multimodule/core-module-testing-view.ts")

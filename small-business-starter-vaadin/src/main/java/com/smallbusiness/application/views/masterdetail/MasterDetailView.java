@@ -1,8 +1,8 @@
 package com.smallbusiness.application.views.masterdetail;
 
-import com.smallbusiness.core.backend.entity.SamplePerson;
-import com.smallbusiness.core.backend.service.SamplePersonService;
 import com.smallbusiness.application.views.MainLayout;
+import com.smallbusiness.core.entity.SamplePerson;
+import com.smallbusiness.core.service.SamplePersonService;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
@@ -27,10 +27,11 @@ import com.vaadin.flow.router.BeforeEnterObserver;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.spring.data.VaadinSpringDataHelpers;
-import java.util.Optional;
-import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
+
+import java.util.Optional;
+import java.util.UUID;
 
 @PageTitle("Master-Detail")
 @Route(value = "master-detail/:samplePersonID?/:action?(edit)", layout = MainLayout.class)
@@ -40,7 +41,7 @@ public class MasterDetailView extends Div implements BeforeEnterObserver {
     private final String SAMPLEPERSON_ID = "samplePersonID";
     private final String SAMPLEPERSON_EDIT_ROUTE_TEMPLATE = "master-detail/%s/edit";
 
-    private Grid<SamplePerson> grid = new Grid<>(SamplePerson.class, false);
+    private final Grid<SamplePerson> grid = new Grid<>(SamplePerson.class, false);
 
     private TextField firstName;
     private TextField lastName;

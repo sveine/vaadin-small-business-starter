@@ -1,15 +1,16 @@
-package com.smallbusiness.core.backend.generator;
+package com.smallbusiness.core.service.generator;
 
-import com.smallbusiness.core.backend.entity.SamplePerson;
-import com.smallbusiness.core.backend.service.SamplePersonRepository;
-import org.springframework.stereotype.Component;
+import com.smallbusiness.core.entity.SamplePerson;
+import com.smallbusiness.core.repository.SamplePersonRepository;
 import com.vaadin.exampledata.DataType;
 import com.vaadin.exampledata.ExampleDataGenerator;
-import java.time.LocalDateTime;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
+import java.time.LocalDateTime;
 
 @Component
 public class DataGenerator {

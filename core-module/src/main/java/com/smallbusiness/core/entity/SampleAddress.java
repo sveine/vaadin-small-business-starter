@@ -1,4 +1,4 @@
-package com.smallbusiness.core.backend.entity;
+package com.smallbusiness.core.entity;
 
 import javax.persistence.Entity;
 
