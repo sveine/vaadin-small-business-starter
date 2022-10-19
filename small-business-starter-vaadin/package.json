@@ -20,6 +20,8 @@
     "@polymer/iron-meta": "3.0.1",
     "@polymer/iron-resizable-behavior": "3.0.1",
     "@polymer/polymer": "3.5.1",
+    "@types/react": "18.0.21",
+    "@types/react-dom": "18.0.6",
     "@vaadin-component-factory/vcf-nav": "1.0.6",
     "@vaadin/accordion": "23.2.5",
     "@vaadin/app-layout": "23.2.5",
@@ -129,6 +131,7 @@
     "@vaadin/vaadin-virtual-list": "23.2.5",
     "@vaadin/vertical-layout": "23.2.5",
     "@vaadin/virtual-list": "23.2.5",
+    "@vitejs/plugin-react": "2.1.0",
     "@web-types/lit": "latest",
     "construct-style-sheets-polyfill": "3.1.0",
     "date-fns": "2.29.3",
@@ -136,6 +139,8 @@
     "lit": "2.3.0",
     "mobx": "^6.3.5",
     "proj4": "2.8.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "sass": "1.55.0"
   },
   "devDependencies": {
@@ -172,6 +177,8 @@
       "@polymer/iron-meta": "3.0.1",
       "@polymer/iron-resizable-behavior": "3.0.1",
       "@polymer/polymer": "3.5.1",
+      "@types/react": "18.0.21",
+      "@types/react-dom": "18.0.6",
       "@vaadin-component-factory/vcf-nav": "1.0.6",
       "@vaadin/accordion": "23.2.5",
       "@vaadin/app-layout": "23.2.5",
@@ -280,6 +287,7 @@
       "@vaadin/vaadin-virtual-list": "23.2.5",
       "@vaadin/vertical-layout": "23.2.5",
       "@vaadin/virtual-list": "23.2.5",
+      "@vitejs/plugin-react": "2.1.0",
       "@web-types/lit": "latest",
       "construct-style-sheets-polyfill": "3.1.0",
       "date-fns": "2.29.3",
@@ -287,6 +295,8 @@
       "lit": "2.3.0",
       "mobx": "^6.3.5",
       "proj4": "2.8.0",
+      "react": "18.2.0",
+      "react-dom": "18.2.0",
       "sass": "1.55.0"
     },
     "devDependencies": {
@@ -304,7 +314,7 @@
       "workbox-core": "6.5.0",
       "workbox-precaching": "6.5.0"
     },
-    "hash": "c47c47f931356d8ef1c053dd6b2df8b33de1af6a199de577696f1b0d942b1a0b"
+    "hash": "c3866d85bea0e3e09a49311cea7503403bb0da78962f1b4f6f1f67e82d7ae651"
   },
   "overrides": {
     "@vaadin/bundles": "$@vaadin/bundles",
@@ -438,6 +448,11 @@
     "@hilla/generator-typescript-plugin-push": "$@hilla/generator-typescript-plugin-push",
     "@hilla/form": "$@hilla/form",
     "@hilla/generator-typescript-plugin-backbone": "$@hilla/generator-typescript-plugin-backbone",
-    "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli"
+    "@hilla/generator-typescript-cli": "$@hilla/generator-typescript-cli",
+    "react-dom": "$react-dom",
+    "react": "$react",
+    "@types/react": "$@types/react",
+    "@types/react-dom": "$@types/react-dom",
+    "@vitejs/plugin-react": "$@vitejs/plugin-react"
   }
 }

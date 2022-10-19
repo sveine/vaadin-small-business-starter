@@ -6,7 +6,7 @@
 - Multi-module Docker sample
 - IDE support  [core-module/frontend-lib/ide/autocomplete/README.md](core-module/frontend-lib/ide/autocomplete/README.md)
 - SCSS
-- ...
+- React with Lit
 
 ## Modules
 

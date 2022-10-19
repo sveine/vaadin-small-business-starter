@@ -7,6 +7,7 @@ import com.smallbusiness.application.views.helloworld.HelloWorldView;
 import com.smallbusiness.application.views.masterdetail.MasterDetailView;
 import com.smallbusiness.application.views.multimodule.CoreModuleTestingView;
 import com.smallbusiness.application.views.personform.PersonFormView;
+import com.smallbusiness.application.views.reactdemo.ReactRenderSampleView;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
@@ -120,6 +121,7 @@ public class MainLayout extends AppLayout {
     private MenuItemInfo[] createMenuItems() {
         return new MenuItemInfo[]{
                 new MenuItemInfo("Multimodule", "la la-handshake", CoreModuleTestingView.class),
+                new MenuItemInfo("Ract and (S)CSS", "lab la-react", ReactRenderSampleView.class),
                 new MenuItemInfo("Hello World", "la la-globe", HelloWorldView.class),
                 new MenuItemInfo("About", "la la-file", AboutView.class),
                 new MenuItemInfo("Master-Detail", "la la-columns", MasterDetailView.class),

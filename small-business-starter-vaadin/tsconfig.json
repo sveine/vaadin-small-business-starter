@@ -19,6 +19,7 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "experimentalDecorators": true,
+    "jsx": "react",
     "baseUrl": "frontend",
     "paths": {
       "FrontendLib/*": [
