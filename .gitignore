@@ -3,6 +3,7 @@
 *.iml
 !*/.idea/runConfigurations/
 
+# Uncomment for multi repo
 #/*/
 #!/*-project/
 
