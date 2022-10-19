@@ -1,12 +1,12 @@
-package com.smallbusiness.core.views;
+package com.smallbusiness.application.views;
 
 
-import com.smallbusiness.core.views.about.AboutView;
-import com.smallbusiness.core.views.addressform.AddressFormView;
-import com.smallbusiness.core.views.helloworld.HelloWorldView;
-import com.smallbusiness.core.views.masterdetail.MasterDetailView;
-import com.smallbusiness.core.views.multimodule.CoreModuleTestingView;
-import com.smallbusiness.core.views.personform.PersonFormView;
+import com.smallbusiness.application.views.about.AboutView;
+import com.smallbusiness.application.views.addressform.AddressFormView;
+import com.smallbusiness.application.views.helloworld.HelloWorldView;
+import com.smallbusiness.application.views.masterdetail.MasterDetailView;
+import com.smallbusiness.application.views.multimodule.CoreModuleTestingView;
+import com.smallbusiness.application.views.personform.PersonFormView;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;

@@ -1,4 +1,4 @@
-package com.smallbusiness.core.views.multimodule;
+package com.smallbusiness.application.views.multimodule;
 
 import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.dependency.CssImport;
@@ -9,7 +9,7 @@ import com.vaadin.flow.component.littemplate.LitTemplate;
 import com.vaadin.flow.component.template.Id;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
-import com.smallbusiness.core.views.MainLayout;
+import com.smallbusiness.application.views.MainLayout;
 
 @PageTitle("Core module testing")
 @Route(layout = MainLayout.class)

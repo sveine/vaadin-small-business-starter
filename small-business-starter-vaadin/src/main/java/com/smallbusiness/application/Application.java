@@ -1,4 +1,4 @@
-package com.smallbusiness.core;
+package com.smallbusiness.application;
 
 import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.component.page.AppShellConfigurator;

@@ -1,4 +1,4 @@
-package com.smallbusiness.core.endpoints;
+package com.smallbusiness.application.endpoints;
 
 import com.smallbusiness.core.sampledata.EndpointData;
 import com.vaadin.flow.server.auth.AnonymousAllowed;

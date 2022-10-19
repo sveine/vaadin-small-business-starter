@@ -1,8 +1,8 @@
-package com.smallbusiness.core.views.personform;
+package com.smallbusiness.application.views.personform;
 
 import com.smallbusiness.core.backend.entity.SamplePerson;
 import com.smallbusiness.core.backend.service.SamplePersonService;
-import com.smallbusiness.core.views.MainLayout;
+import com.smallbusiness.application.views.MainLayout;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
