@@ -1,13 +1,13 @@
-package com.smallbusiness.application.views;
+package com.smallbusiness.starter.views;
 
 
-import com.smallbusiness.application.views.about.AboutView;
-import com.smallbusiness.application.views.addressform.AddressFormView;
-import com.smallbusiness.application.views.helloworld.HelloWorldView;
-import com.smallbusiness.application.views.masterdetail.MasterDetailView;
-import com.smallbusiness.application.views.multimodule.CoreModuleTestingView;
-import com.smallbusiness.application.views.personform.PersonFormView;
-import com.smallbusiness.application.views.reactdemo.ReactRenderSampleView;
+import com.smallbusiness.starter.views.about.AboutView;
+import com.smallbusiness.starter.views.addressform.AddressFormView;
+import com.smallbusiness.starter.views.helloworld.HelloWorldView;
+import com.smallbusiness.starter.views.masterdetail.MasterDetailView;
+import com.smallbusiness.starter.views.multimodule.CoreModuleTestingView;
+import com.smallbusiness.starter.views.personform.PersonFormView;
+import com.smallbusiness.starter.views.reactdemo.ReactRenderSampleView;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;

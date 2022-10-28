@@ -1,6 +1,6 @@
-package com.smallbusiness.application.views.about;
+package com.smallbusiness.starter.views.about;
 
-import com.smallbusiness.application.views.MainLayout;
+import com.smallbusiness.starter.views.MainLayout;
 import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.html.Image;
 import com.vaadin.flow.component.html.Paragraph;

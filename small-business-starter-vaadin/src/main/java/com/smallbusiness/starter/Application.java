@@ -1,4 +1,4 @@
-package com.smallbusiness.application;
+package com.smallbusiness.starter;
 
 import com.smallbusiness.core.entity.BasePackageForEntity;
 import com.smallbusiness.core.repository.BasePackageForRepository;

@@ -1,6 +1,6 @@
-package com.smallbusiness.application.views.reactdemo;
+package com.smallbusiness.starter.views.reactdemo;
 
-import com.smallbusiness.application.views.MainLayout;
+import com.smallbusiness.starter.views.MainLayout;
 import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;

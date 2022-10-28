@@ -1,6 +1,6 @@
-package com.smallbusiness.application.views.addressform;
+package com.smallbusiness.starter.views.addressform;
 
-import com.smallbusiness.application.views.MainLayout;
+import com.smallbusiness.starter.views.MainLayout;
 import com.smallbusiness.core.entity.SampleAddress;
 import com.smallbusiness.core.service.SampleAddressService;
 import com.vaadin.flow.component.Component;
