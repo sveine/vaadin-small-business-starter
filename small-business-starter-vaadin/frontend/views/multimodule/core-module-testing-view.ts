@@ -57,7 +57,7 @@ export class CoreModuleTestingView extends View {
                     <div id="backendImage"></div>
 
                     <div>Image loaded frontend from core-module jar in META-INF/resources/images</div>
-                    <img src="./images/hospital.png" alt="">
+                    <img src="./core/img/hospital.png" alt="">
                 </div>
 
             </vaadin-vertical-layout>`;

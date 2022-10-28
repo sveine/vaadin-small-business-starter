@@ -25,7 +25,7 @@ public class CoreModuleTestingView extends LitTemplate {
     Div backendImage;
 
     public CoreModuleTestingView() {
-        var image = new Image("./images/lookoutPoint.png", "");
+        var image = new Image("./core/img/lookoutPoint.png", "");
         backendImage.add(image);
     }
 }
