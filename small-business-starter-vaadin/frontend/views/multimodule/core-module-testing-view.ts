@@ -41,11 +41,11 @@ export class CoreModuleTestingView extends View {
 
                 <h3>Style</h3>
                 <div style="display: inline-grid;grid-template-columns: auto auto;" class="gap-x-xl gap-y-s bg-contrast-5">
-                    <div>CSS loaded backend my-core-resources-colors.css</div>
-                    <div class="core-resources-red-bk" style="width: 100px"></div>
-
                     <div>Theme/styles.css @import "FrontendLib/theme/my-core-theme-colors.css"</div>
                     <div class="core-theme-yellow-bk"></div>
+
+                    <div>SCSS loaded backend ./../../core-module/frontend-lib/css/my-core-backend-colors.scss</div>
+                    <div class="core-resources-red-bk" style="width: 100px"></div>
 
                     <div>SCSS frontend-lib/css/my-core-frontend-colors.scss</div>
                     <div class="core-frontend-blue-bk"></div>

@@ -18,7 +18,7 @@ import com.vaadin.flow.router.RouteAlias;
 @Tag("core-module-testing-view")
 @JsModule("./views/multimodule/core-module-testing-view.ts")
 
-@CssImport("./css/my-core-resources-colors.css")
+@CssImport("./../../core-module/frontend-lib/css/my-core-backend-colors.scss")
 
 public class CoreModuleTestingView extends LitTemplate {
     @Id
