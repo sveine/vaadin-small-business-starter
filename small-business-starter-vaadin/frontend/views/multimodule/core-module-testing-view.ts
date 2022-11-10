@@ -4,7 +4,7 @@ import '@vaadin/vaadin-text-field';
 import {html} from 'lit';
 import {customElement, state} from 'lit/decorators.js';
 import {View} from "Frontend/views/view";
-import {DemoEndpoint} from "Frontend/generated/endpoints";
+import {DebugFrontend, DemoEndpoint} from "Frontend/generated/endpoints";
 import {HelloUtil} from "FrontendLib/src/util/hello-util";
 import "FrontendLib/css/my-core-frontend-colors.scss";
 import EnpointJavaRecord from "Frontend/generated/com/smallbusiness/core/sampledata/EndpointData/EnpointJavaRecord";
@@ -19,7 +19,10 @@ export class CoreModuleTestingView extends View {
     connectedCallback() {
         super.connectedCallback();
         this.classList.add('flex', 'p-m', 'gap-m');
-        DemoEndpoint.helloFromCoreModule().then(value => this.helloFromEndpoint = value);
+        DemoEndpoint.helloFromCoreModule().then(value => {
+            DebugFrontend.logOnSysErr(`DemoEndpoint.helloFromCoreModule: ${JSON.stringify(value)}`).then();
+            return this.helloFromEndpoint = value;
+        });
         this.helloFromCoreFrontendLib = new HelloUtil().helloFromBackendTypescript();
     }
 
