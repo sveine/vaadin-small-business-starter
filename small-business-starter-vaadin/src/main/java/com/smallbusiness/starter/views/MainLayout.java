@@ -2,25 +2,15 @@ package com.smallbusiness.starter.views;
 
 
 import com.smallbusiness.starter.views.about.AboutView;
-import com.smallbusiness.starter.views.addressform.AddressFormView;
 import com.smallbusiness.starter.views.helloworld.HelloWorldView;
-import com.smallbusiness.starter.views.masterdetail.MasterDetailView;
 import com.smallbusiness.starter.views.multimodule.CoreModuleTestingView;
-import com.smallbusiness.starter.views.personform.PersonFormView;
 import com.smallbusiness.starter.views.reactdemo.ReactRenderSampleView;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.dependency.NpmPackage;
-import com.vaadin.flow.component.html.Footer;
-import com.vaadin.flow.component.html.H1;
-import com.vaadin.flow.component.html.H2;
-import com.vaadin.flow.component.html.Header;
-import com.vaadin.flow.component.html.ListItem;
-import com.vaadin.flow.component.html.Nav;
-import com.vaadin.flow.component.html.Span;
-import com.vaadin.flow.component.html.UnorderedList;
+import com.vaadin.flow.component.html.*;
 import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.RouterLink;
 
@@ -96,7 +86,7 @@ public class MainLayout extends AppLayout {
         appName.addClassNames("app-name");
 
         com.vaadin.flow.component.html.Section section = new com.vaadin.flow.component.html.Section(appName,
-                createNavigation(), createFooter());
+            createNavigation(), createFooter());
         section.addClassNames("drawer-section");
         return section;
     }
@@ -120,13 +110,13 @@ public class MainLayout extends AppLayout {
 
     private MenuItemInfo[] createMenuItems() {
         return new MenuItemInfo[]{
-                new MenuItemInfo("Multimodule", "la la-handshake", CoreModuleTestingView.class),
-                new MenuItemInfo("Ract and (S)CSS", "lab la-react", ReactRenderSampleView.class),
-                new MenuItemInfo("Hello World", "la la-globe", HelloWorldView.class),
-                new MenuItemInfo("About", "la la-file", AboutView.class),
-                new MenuItemInfo("Master-Detail", "la la-columns", MasterDetailView.class),
-                new MenuItemInfo("Person Form", "la la-user", PersonFormView.class),
-                new MenuItemInfo("Address Form", "la la-map-marker", AddressFormView.class),
+            new MenuItemInfo("Multimodule", "la la-handshake", CoreModuleTestingView.class),
+            new MenuItemInfo("Ract and (S)CSS", "lab la-react", ReactRenderSampleView.class),
+            new MenuItemInfo("Hello World", "la la-globe", HelloWorldView.class),
+            new MenuItemInfo("About", "la la-file", AboutView.class),
+//                new MenuItemInfo("Master-Detail", "la la-columns", MasterDetailView.class),
+//                new MenuItemInfo("Person Form", "la la-user", PersonFormView.class),
+//                new MenuItemInfo("Address Form", "la la-map-marker", AddressFormView.class),
         };
     }
 

@@ -1,6 +1,3 @@
-import '@vaadin/vaadin-button';
-import '@vaadin/vaadin-ordered-layout/vaadin-horizontal-layout';
-import '@vaadin/vaadin-text-field';
 import {html} from 'lit';
 import {customElement, state} from 'lit/decorators.js';
 import {View} from "Frontend/views/view";

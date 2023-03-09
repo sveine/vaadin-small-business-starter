@@ -10,7 +10,7 @@ import com.vaadin.flow.router.Route;
 
 @NpmPackage(value = "sass", version = "1.55.0")
 
-@NpmPackage(value = "@vitejs/plugin-react", version = "2.1.0")
+@NpmPackage(value = "@vitejs/plugin-react", version = "3.1.0")
 @NpmPackage(value = "react", version = "18.2.0")
 @NpmPackage(value = "@types/react", version = "18.0.21")
 @NpmPackage(value = "react-dom", version = "18.2.0")

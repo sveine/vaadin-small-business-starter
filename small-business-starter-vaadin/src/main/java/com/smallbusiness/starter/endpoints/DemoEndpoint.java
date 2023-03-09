@@ -3,8 +3,7 @@ package com.smallbusiness.starter.endpoints;
 import com.smallbusiness.core.sampledata.EndpointData;
 import com.vaadin.flow.server.auth.AnonymousAllowed;
 import dev.hilla.Endpoint;
-
-import javax.annotation.Nonnull;
+import jakarta.annotation.Nonnull;
 
 @AnonymousAllowed
 @Endpoint

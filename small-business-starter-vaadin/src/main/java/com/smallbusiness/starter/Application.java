@@ -20,7 +20,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  * <p>
  * Use the @PWA annotation make the application installable on phones, tablets
  * and some desktop browsers.
- *
  */
 @SpringBootApplication(exclude = ErrorMvcAutoConfiguration.class)
 @EntityScan(basePackageClasses = {BasePackageForEntity.class})
